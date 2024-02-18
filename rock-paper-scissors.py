@@ -1,3 +1,6 @@
+# Microsoft Learn exercise: Introduction to objected-oriented programming with Python
+# https://learn.microsoft.com/en-us/training/modules/python-object-oriented-programming/
+
 class Participant:
     def __init__(self, name):
         self.name = name
@@ -59,7 +62,7 @@ class Game:
             GameRound(self.participant, self.secondParticipant)
             self.checkEndCondition()
         else:
-            print("Game ended! {p1name} has {p1points} point(s) and {p2name} has {p2points} point(s).".format(p1name = self.participant.name, p1points= self.participant.points, p2name=self.secondParticipant.name, p2points=self.secondParticipant.points))
+            print("Game ended! {p1name} has {p1points} point(s) and {p2name} has {p2points} point(s.".format(p1name = self.participant.name, p1points= self.participant.points, p2name=self.secondParticipant.name, p2points=self.secondParticipant.points))
             self.determineWinner()
             self.endGame = True
 
